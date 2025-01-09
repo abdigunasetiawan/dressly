@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #navigationLinks {
-  max-height: 0;
-  transition: max-height 500ms;
-} */
-
-#navigationLinks.active {
-  @apply absolute left-4 top-10 flex flex-col rounded-md bg-white p-4 shadow-md;
+nav#navbar .container {
+  height: 58px;
+  transition: height 300ms;
 }
 
-/* #navigationLinks.active {
-  max-height: 1000px;
-  transition: max-height 500ms;
-} */
-
-#navigationLinks.active a {
-  @apply text-sm font-medium text-slate-900;
-}
-
-@media only screen and (min-width: 768px) {
-  #navigationLinks.active {
-    @apply left-8;
-  }
+nav#navbar .container.active {
+  height: 170px;
+  transition: height 300ms;
 }
