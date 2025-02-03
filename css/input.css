@@ -11,3 +11,61 @@ nav#navbar .container.active {
   height: 170px;
   transition: height 300ms;
 }
+
+section#section-hero .img-hero {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+section#section-hero .img-hero.img-hero-1 {
+  animation-delay: 500ms;
+}
+
+section#section-hero .img-hero.img-hero-2 {
+  animation-delay: 1000ms;
+}
+
+section#section-hero .img-hero.img-hero-3 {
+  animation-delay: 1500ms;
+}
+
+section#section-hero .hero-decor.hero-decor-1 path {
+  stroke-dasharray: 131px;
+  stroke-dashoffset: -131px;
+  animation: dash 1s linear forwards;
+}
+
+section#section-hero .hero-decor.hero-decor-2 {
+  opacity: 0;
+  animation:
+    fadeIn 1s 1500ms forwards,
+    scale 500ms 1500ms ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 125%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

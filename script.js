@@ -14,3 +14,5 @@ navbarToggle.addEventListener("click", () => {
 
   navbarToggle.classList.toggle("active");
 });
+
+console.dir(document.querySelector(".hero-decor-1 path").getTotalLength());
