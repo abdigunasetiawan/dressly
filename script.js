@@ -1,3 +1,6 @@
+// AOS Init
+AOS.init();
+
 // Navbar Toggle
 const navbarToggle = document.querySelector("#hamburgerToggle");
 const navigationLinks = document.querySelector("#navigationLinks");
