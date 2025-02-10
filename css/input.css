@@ -35,6 +35,12 @@ section#section-hero .hero-decor.hero-decor-1 path {
   animation: dash 1s linear forwards;
 }
 
+section#section-hero .hero-decor.hero-decor-1.hero-decor-desktop path {
+  stroke-dasharray: 227px;
+  stroke-dashoffset: -227px;
+  animation: dash 1s linear forwards;
+}
+
 section#section-hero .hero-decor.hero-decor-2 {
   opacity: 0;
   animation:

@@ -90,36 +90,51 @@
 
     <!-- Section Hero  -->
     <section id="section-hero" class="mt-[58px]">
-      <div class="container mx-auto flex flex-col gap-y-8 px-4 py-8 md:flex-row-reverse md:justify-between md:gap-x-6 md:px-8 lg:items-center xl:px-16 xl:py-14 2xl:px-[110px] 2xl:py-16">
+      <div class="container mx-auto flex flex-col gap-y-8 px-4 py-8 md:flex-row-reverse md:justify-between md:gap-x-[calc(24px+30px)] md:px-8 lg:items-center xl:px-16 xl:py-14 2xl:px-[110px] 2xl:py-16">
         <!-- Hero Image -->
-        <div class="relative flex h-[322px] items-end justify-end">
+        <div class="relative flex h-[322px] items-end justify-end 2xl:h-[560px]">
           <!-- Decoration -->
           <!-- right-[313px+(58px/2)] -->
           <!-- right 242 -->
           <!-- 313, 99 -->
-          <div class="absolute right-[calc((313px-99px)+58px/2)] top-0 z-50 flex flex-col gap-y-[22px]">
-            <svg class="hero-decor hero-decor-1 ml-[28px]" xmlns="http://www.w3.org/2000/svg" width="71" height="71" fill="none" viewBox="0 0 71 71">
+          <!-- 2xl -->
+          <!-- container width: 546px -->
+          <!-- decoration container width: 175px -->
+          <!-- star width: 106px -->
+          <div class="absolute right-[calc((313px-99px)+58px/2)] top-0 z-50 flex flex-col gap-y-[22px] 2xl:right-[calc((546px-175px)+(106px/2))]">
+            <svg class="hero-decor hero-decor-1 ml-[28px] h-[71px] w-[71px] 2xl:hidden 2xl:h-[119px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 71">
               <path stroke="#E09370" stroke-linecap="round" stroke-width="1.952" d="M1.333 69.303V15.051C1.333 7.29 7.623 1 15.383 1h54.394" />
             </svg>
-            <svg class="hero-decor hero-decor-2" xmlns="http://www.w3.org/2000/svg" width="59" height="59" fill="none" viewBox="0 0 59 59">
+            <svg class="hero-decor hero-decor-1 hero-decor-desktop hidden 2xl:ml-[calc(102px/2)] 2xl:block" xmlns="http://www.w3.org/2000/svg" width="124" height="123" fill="none" viewBox="0 0 124 123">
+              <path stroke="#E09370" stroke-linecap="round" stroke-width="3.402" d="M2.14 120.788V26.497C2.14 12.967 13.108 2 26.637 2h94.83" />
+            </svg>
+
+            <svg class="hero-decor hero-decor-2 2xl:hidden" xmlns="http://www.w3.org/2000/svg" width="59" height="59" fill="none" viewBox="0 0 59 59">
               <mask id="a" fill="#fff">
                 <path fill-rule="evenodd" d="M29.333 58.705c0-16.157 13.09-29.256 29.242-29.273C42.422 29.416 29.333 16.317 29.333.16c0 16.157-13.09 29.256-29.243 29.272 16.153.017 29.243 13.116 29.243 29.273Z" clip-rule="evenodd" />
               </mask>
               <path fill="#E09370" fill-rule="evenodd" d="M29.333 58.705c0-16.157 13.09-29.256 29.242-29.273C42.422 29.416 29.333 16.317 29.333.16c0 16.157-13.09 29.256-29.243 29.272 16.153.017 29.243 13.116 29.243 29.273Z" clip-rule="evenodd" />
               <path fill="#E09370" d="m58.575 29.432.003 2.662V26.77l-.003 2.661ZM29.333.16h2.661v-.187l-.026-.184-2.635.37Zm0 0 2.635-.37-5.296.37h2.661ZM.09 29.432l-.002-2.66v5.322l.002-2.662Zm31.904 29.273c0-14.688 11.9-26.597 26.584-26.611l-.005-5.323C40.95 26.79 26.672 41.08 26.672 58.705h5.322Zm26.584-31.934C43.894 26.756 31.994 14.848 31.994.16h-5.322c0 17.625 14.28 31.916 31.9 31.933l.006-5.322ZM31.968-.21l-5.27.741 5.27-.74Zm-5.296.37c0 14.689-11.9 26.597-26.584 26.612l.005 5.322C17.715 32.076 31.994 17.785 31.994.16h-5.322ZM.088 32.094c14.684.015 26.584 11.924 26.584 26.612h5.322c0-17.625-14.28-31.916-31.9-31.934l-.006 5.322Z" mask="url(#a)" />
             </svg>
+            <svg class="hero-decor hero-decor-2 hero-decor-desktop hidden 2xl:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="195.4327888888889 0 104.82222222222222 103.58857142857144" style="max-height: 500px" width="104.82222222222222" height="103.58857142857144">
+              <mask fill="white" id="path-1-inside-1_391_58">
+                <path d="M0.891846 51.7091L197.105 51.7091C225.291 51.7091 248.14 74.5584 248.14 102.744C248.14 74.5583 270.989 51.7091 299.175 51.7091H476.369L299.175 51.7091C270.989 51.7091 248.14 28.8598 248.14 0.673813V0.673867C248.14 28.8599 225.291 51.7091 197.105 51.7091H0.891846Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </mask>
+              <path fill="#E09370" d="M0.891846 51.7091L197.105 51.7091C225.291 51.7091 248.14 74.5584 248.14 102.744C248.14 74.5583 270.989 51.7091 299.175 51.7091H476.369L299.175 51.7091C270.989 51.7091 248.14 28.8598 248.14 0.673813V0.673867C248.14 28.8599 225.291 51.7091 197.105 51.7091H0.891846Z" clip-rule="evenodd" fill-rule="evenodd" />
+              <path mask="url(#path-1-inside-1_391_58)" fill="#E09370" d="M197.105 51.7091L197.105 56.3487H197.105V51.7091ZM299.175 51.7091L299.175 47.0695H299.175V51.7091ZM0.891845 56.3486L197.105 56.3487L197.105 47.0695L0.891847 47.0695L0.891845 56.3486ZM197.105 56.3487C222.729 56.3487 243.501 77.1207 243.501 102.744H252.78C252.78 71.996 227.853 47.0695 197.105 47.0695V56.3487ZM252.78 102.744C252.78 77.1207 273.552 56.3487 299.175 56.3487V47.0695C268.427 47.0695 243.501 71.9959 243.501 102.744H252.78ZM299.175 56.3487H476.369V47.0695H299.175V56.3487ZM476.369 47.0695L299.175 47.0695L299.175 56.3486L476.369 56.3487L476.369 47.0695ZM299.175 47.0695C273.552 47.0695 252.78 26.2974 252.78 0.673813H243.501C243.501 31.4222 268.427 56.3486 299.175 56.3486V47.0695ZM243.501 0.673813V0.673867H252.78V0.673813H243.501ZM243.501 0.673867C243.501 26.2975 222.729 47.0695 197.105 47.0695V56.3486C227.853 56.3486 252.78 31.4222 252.78 0.673867H243.501ZM197.105 47.0695H0.891846V56.3486H197.105V47.0695Z" />
+            </svg>
           </div>
           <!-- _Decoration -->
 
-          <img class="img-hero img-hero-1 absolute right-0 top-0 h-[210px]" src="assets/img/hero1.png" alt="" />
-          <div class="flex gap-x-[9.4px]">
-            <img class="img-hero img-hero-2 max-w-[152px]" src="assets/img/hero2.png" alt="" />
-            <img class="img-hero img-hero-3 max-w-[152px]" src="assets/img/hero3.png" alt="" />
+          <img class="img-hero img-hero-1 absolute right-0 top-0 h-[210px] 2xl:h-[366px]" src="assets/img/hero1.png" alt="" />
+          <div class="flex gap-x-[9.4px] 2xl:gap-x-[16.36px]">
+            <img class="img-hero img-hero-2 max-w-[152px] 2xl:max-w-[265px]" src="assets/img/hero2.png" alt="" />
+            <img class="img-hero img-hero-3 max-w-[152px] 2xl:max-w-[265px]" src="assets/img/hero3.png" alt="" />
           </div>
         </div>
         <!-- _Hero Image -->
         <!-- Hero Text -->
-        <div class="">
+        <div class="xl:max-w-[598px]">
           <h1 class="text-balance font-lora text-[28px] font-semibold leading-[120%] tracking-[-2px] text-x-neutral-900 lg:text-4xl xl:text-5xl 2xl:text-[52px] 2xl:leading-[110%]">
             Discover the Latest <br />
             Fashion Trends
